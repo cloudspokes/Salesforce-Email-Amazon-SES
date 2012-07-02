@@ -1,0 +1,7 @@
+PushTopic pushTopic = new PushTopic();
+pushTopic.ApiVersion = 23.0;
+pushTopic.Name = 'AllAMSEmails';
+pushTopic.Description = 'All records for the AMS_Email__c object';
+pushtopic.Query = 'SELECT Id, Name FROM AMS_Email__c';
+insert pushTopic;
+System.debug('Created new PushTopic: '+ pushTopic.Id);

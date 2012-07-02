@@ -1,0 +1,24 @@
+AMS_Email__c email = new AMS_Email__c();
+email.From__c = 'a@b.com';
+email.Reply_To__c = 'wcheung@irise.com';
+email.Subject__c = 'test subject';
+email.Body__c = 'Happy Fathers Day - send a dadmail!';
+email.To__c = 'wwmcheung@hotmail.com,wcheung@irise.com';
+email.CC__c = 'wwmcheungmale@gmail.com';
+email.BCC__c = '';
+insert email;
+
+AMS_Email_Attachment__c atch = new AMS_Email_Attachment__c();
+atch.AMS_Email__c = email.id;
+atch.Attachment__c = '00PU0000001R9SU';
+insert atch;
+
+atch = new AMS_Email_Attachment__c();
+atch.AMS_Email__c = email.id;
+atch.Attachment__c = '00PU0000001R9dg';
+insert atch;
+
+atch = new AMS_Email_Attachment__c();
+atch.AMS_Email__c = email.id;
+atch.Attachment__c = '00PU0000001R9eF';
+insert atch;

@@ -1,0 +1,10 @@
+Email Service for Salesforce with Amazon SES
+
+URL: http://www.cloudspokes.com/challenges/1555
+Challenge end date: 6/15/2012 4:00 PM
+
+Description
+===========
+Create an email service in Java using the Force.com Streaming API to send email through Amazon SES. 
+
+Here's a high level overview of the application: "Emails" records will be inserted into a Custom Object in Salesforce along with any attachments. The Java application on heroku will use the Streaming API to "listen" for newly inserted email records. When a new record is detected, the Java application will grab all of it's information as well as any attachments and send the email to the recipient using Amazon SES. 
